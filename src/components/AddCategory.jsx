@@ -1,5 +1,7 @@
 import { useState } from "react";
+import PropTypes from "prop-types";
 
+// eslint-disable-next-line react/prop-types
 export const AddCategory = ({onNewCategory}) => {
   
     const [inputValue, setInputValue] = useState('Dragon ball');
@@ -15,10 +17,10 @@ export const AddCategory = ({onNewCategory}) => {
         setInputValue('');
         onNewCategory(inputValue.trim());
     }
-
+    
     return (
        <div className="contentForm">
-           <form onSubmit={onSubmit} > 
+           <form onSubmit={onSubmit} aria-label="form"> 
                 <input 
                     type="text" 
                     placeholder="Buscar gifs"
@@ -28,4 +30,8 @@ export const AddCategory = ({onNewCategory}) => {
             </form>   
         </div>
    );
+};
+
+AddCategory.PropTypes = {
+    onNewCategory: PropTypes.func.isRequired,
 };

@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GifItem Component should match the snapshot 1`] = `
+<div>
+  <div
+    class="card"
+  >
+    <img
+      alt="Goku"
+      src="http://api//dragon"
+    />
+    <p>
+      Goku
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Test  should match the snapshot 1`] = `
+<div>
+  <div
+    class="card"
+  >
+    <img
+      alt="Goku"
+      src="http://api//dragon"
+    />
+    <p>
+      Goku
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Test in the component should match the snapshot 1`] = `
+<div>
+  <div
+    class="card"
+  >
+    <img
+      alt="Goku"
+      src="http://api//dragon"
+    />
+    <p>
+      Goku
+    </p>
+  </div>
+</div>
+`;
